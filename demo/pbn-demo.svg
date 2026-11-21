@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1088 624" width="1088" height="624" role="img" aria-labelledby="title description">
+  <title id="title">Copying an internal note with Protocol Boundary Network</title>
+  <desc id="description">Playback of an offline Linux run. An agent receives a reference to a sample note. The internal copy succeeds and matches the source. The public copy is refused and no file is created.</desc>
+  <style>
+    text { font-family: system-ui, sans-serif; fill: #f0f4f4; }
+    .secondary { fill: #b3c5ce; font-size: 22px; }
+    .path { font-family: ui-monospace, monospace; font-size: 32px; }
+    .decision { font-weight: 700; font-size: 31px; }
+    .result { font-size: 23px; }
+    .pending { opacity: 0; fill: #94aab7; font-size: 22px; }
+    @media (prefers-reduced-motion: no-preference) {
+      .inside { animation: inside 16s infinite; }
+      .outside { animation: outside 16s infinite; }
+      .wait-inside { animation: wait-inside 16s infinite; }
+      .wait-outside { animation: wait-outside 16s infinite; }
+    }
+    @keyframes inside { 0%,25% {opacity:0} 27%,100% {opacity:1} }
+    @keyframes outside { 0%,55.5% {opacity:0} 57.5%,100% {opacity:1} }
+    @keyframes wait-inside { 0%,25% {opacity:1} 27%,100% {opacity:0} }
+    @keyframes wait-outside { 0%,55.5% {opacity:1} 57.5%,100% {opacity:0} }
+  </style>
+  <rect width="1088" height="624" rx="14" fill="#101a23"/>
+  <text x="48" y="48" font-size="24" font-weight="650">Protocol Boundary Network</text>
+  <text x="1040" y="48" text-anchor="end" class="secondary">Offline demo  /  Linux</text>
+  <path d="M48 69H1040" stroke="#3c515e"/>
+  <text x="46" y="138" font-size="56" font-weight="700">Copying an internal note</text>
+  <text x="48" y="182" fill="#b3c5ce" font-size="27">An agent asks to copy the same note into two folders.</text>
+  <rect x="47" y="212" width="994" height="342" rx="14" fill="#182630" stroke="#3c515e"/>
+  <path d="M70 326H1018 M70 440H1018" stroke="#3c515e"/>
+  <g fill="none" stroke="#b3c5ce" stroke-width="2" stroke-linejoin="round">
+    <path d="M76 250h18l8 8v24H76z M94 250v8h8 M81 267h15 M81 273h15"/>
+    <path d="M75 366h11l4 4h16v20H75z M75 374h31"/>
+    <path d="M75 480h11l4 4h16v20H75z M75 488h31"/>
+  </g>
+  <text x="128" y="253" class="secondary">Read the note</text>
+  <text x="127" y="296" class="path">internal/review.txt</text>
+  <text x="128" y="367" class="secondary">Copy to the internal folder</text>
+  <text x="127" y="410" class="path">internal/copy.txt</text>
+  <text x="128" y="481" class="secondary">Copy to the public folder</text>
+  <text x="127" y="524" class="path">public/copy.txt</text>
+  <circle cx="628" cy="252" r="13" fill="none" stroke="#a9d7ff" stroke-width="2"/>
+  <circle cx="628" cy="252" r="4" fill="#a9d7ff"/>
+  <text x="655" y="263" class="decision" style="fill:#a9d7ff">Reference returned</text>
+  <text x="613" y="298" class="result">The reply omits the note text.</text>
+  <text x="614" y="390" class="pending wait-inside">Awaiting request</text>
+  <g class="inside">
+    <circle cx="628" cy="366" r="13" fill="none" stroke="#82e6bb" stroke-width="2"/>
+    <path d="m621 366 5 5 9-10" fill="none" stroke="#82e6bb" stroke-width="2.3"/>
+    <text x="655" y="377" class="decision" style="fill:#82e6bb">Allowed</text>
+    <text x="613" y="412" class="result">The copy matches the original.</text>
+  </g>
+  <text x="614" y="504" class="pending wait-outside">Awaiting request</text>
+  <g class="outside">
+    <circle cx="628" cy="480" r="13" fill="none" stroke="#ffbd91" stroke-width="2"/>
+    <path d="M622 480h12" stroke="#ffbd91" stroke-width="2.3"/>
+    <text x="655" y="491" class="decision" style="fill:#ffbd91">Refused</text>
+    <text x="613" y="526" class="result">No public file was created.</text>
+  </g>
+  <text x="48" y="597" class="secondary" style="font-family:ui-monospace,monospace">Build 4564168</text>
+  <text x="1040" y="597" text-anchor="end" font-size="23" font-weight="650">331 tests passed</text>
+</svg>
